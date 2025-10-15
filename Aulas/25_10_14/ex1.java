@@ -13,8 +13,22 @@ public class ex1{
             }
             double imc = peso / (altura*altura);
                 
-            System.out.printf("este é o seu imc: %.3f %n", imc);
+            System.out.printf("este é o seu imc: %.1f %n", imc);
 
-        sc.close();
+        
+
+            if( imc <= 18.5){
+                System.out.println("Esta abaixo do peso");
+                
+
+            }else if (18.5 < imc && imc <=24.9 ){
+                System.out.println("Esta no peso normal");
+            
+            }else {
+                System.out.println("Esta com sobrepeso");
+
+            }
+            sc.close();
+
     }
 }
