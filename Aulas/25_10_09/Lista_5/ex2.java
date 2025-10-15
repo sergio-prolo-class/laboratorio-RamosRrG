@@ -1,3 +1,5 @@
+package Lista_5;
+
 import java.util.Scanner;
 
 public class ex2{
@@ -18,11 +20,14 @@ public class ex2{
         
 
         System.out.print("Diigite as 4 notas dos alunos");
-        double nota  = (sc.nextadouble() + sc.nextdouble() + sc.nextdouble() + sc.nextDouble())/4;
-
-        System.out.println(nota);
+        double nota  = (sc.nextDouble() + sc.nextDouble() + sc.nextDouble() + sc.nextDouble())/4;
 
 
+        System.out.println("Digite a frequencia do aluno: ");
+        int frequencia = sc.nextInt();
+
+
+        System.out.println("A nota do aluno é:" + nota +" E ele esta: " + (frequencia>75 && nota>=6 ? "Aprovado" : "Reprovado" ));
         sc.close();
     }
 }

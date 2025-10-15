@@ -1,3 +1,5 @@
+package Lista_5;
+
 import java.util.Scanner; // chamo o scanner
 
 public class ex1 {
@@ -14,7 +16,5 @@ public class ex1 {
     
         sc.close();
     }
-
-
 
 }
